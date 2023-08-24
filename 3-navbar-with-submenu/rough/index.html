@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar-submenu-type3</title>
+    <style>
+        .content {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 20px;
+            height: 1000px;
+            margin: 2%;
+        }
+
+        header {
+            border: 2px solid rgb(190, 76, 19);
+            margin: 25px;
+            padding: 0px;
+        }
+
+        .left {
+            position: absolute;
+            left: 44px;
+            top: 35px;
+            display: inline-block;
+            border: 4px solid rgb(51, 153, 144);
+
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+        }
+
+        .mid {
+            overflow: hidden;
+            background-color: #a7a1a1;
+            display: block;
+            width: 38%;
+            margin: 15px auto;
+            border: 4px solid rgb(150, 220, 214);
+        }
+
+        .mid a {
+            float: left;
+            border: 4px solid rgb(51, 153, 144);
+            font-size: 16px;
+            color: azure;
+            text-align: center;
+            padding: 14px 16px;
+            margin: 0;
+            text-decoration: none;
+
+        }
+
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        .subnav .navbtn {
+            font-size: 16px;
+            border: none;
+            /* outline: none; */
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+            padding: 14px 16px;
+            margin: 0;
+        }
+ /* here (.subnav:hover .navbtn) it means [subnav's button only]-- (not total subnav) */
+         .mid a:hover,  .subnav:hover .navbtn {
+
+            background-color: red;
+        }
+
+        .susubnav-contant{
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: red;
+            width: 100%;
+            /* z-index: 1; */
+        }
+        .subnav-contant a{
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+        .subnav-contant a:hover{
+            background-color: green;
+            color: white;
+            text-decoration: none;
+        }
+        .subnav:hover .subnav-contant{
+            display: block;
+        }
+        /* .navbtn {
+            border: 2px solid rgb(190, 76, 19);
+            display: inline-block;
+            margin: 5px 2px;
+            padding: 6px 47px;
+            text-decoration: none;
+        } */
+
+        .rightbtn {
+            border: 2px solid rgb(190, 76, 19);
+            display: inline-block;
+            margin: 5px;
+            padding: 6px 16px;
+
+        }
+
+        .navbtn a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .right {
+            position: absolute;
+            right: 44px;
+            top: 45px;
+            display: inline-block;
+            border: 4px solid rgb(51, 153, 144);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- fist grid -->
+        <div class="left">
+            <img src="img/codedamn-logo-with-text-1.png" alt="codedamn" />
+        </div>
+
+        <!-- second grid -->
+        <div class="mid">
+            <div class="subnav">
+                <button class="navbtn">Learn</button>
+                <div class="subnav-contant">
+                    <a href="#company">JAVA</a>
+                    <a href="#team">JS</a>
+                    <a href="#careers">CPP</a>
+                </div>
+
+            </div>
+            <div class="subnav">
+                <button class="navbtn">Practice</button>
+                <div class="subnav-contant">
+                    <a href="#company">HTML</a>
+                    <a href="#team">DSA</a>
+                    <a href="#careers">REACT</a>
+                </div>
+
+            </div>
+
+            <a href="#">Pricing</a>
+            <!-- <button class="navbtn"></button> -->
+
+
+        </div>
+
+        <!-- third grid -->
+        <div class="right">
+            <button class="rightbtn">Sign Up</button>
+            <button class="rightbtn">Get Started</button>
+        </div>
+    </header>
+
+
+
+
+    <div class="content">
+        <p> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, necessitatibus iste? Voluptate vel nulla quas
+            enim dolore? Eveniet sit ipsa impedit, assumenda quam perspiciatis. Maxime soluta et hic excepturi beatae
+            fugit, dolore eum error vero in rem, mollitia atque sequi exercitationem reprehenderit alias voluptatum
+            quaerat architecto consectetur modi dicta! Voluptatem cum inventore ut alias sapiente ducimus debitis quae
+            tempora!</p>
+    </div>
+</body>
+
+</html>
