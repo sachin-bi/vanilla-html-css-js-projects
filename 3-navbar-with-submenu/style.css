@@ -1,4 +1,79 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+body{
+    background-image: url(img/bg_img.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+.nav-menu{
+    /* border: 2px solid rgb(211, 189, 248); */
+    background-color: #1e847f;
+    text-align: center;
+}
+
+.nav-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #ffffff;
+}
+.nav-menu ul li {
+    
+    width:  134px;
+    margin: 2px;
+    padding: 16px 26px;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 18px;
+
+}
+.active,.nav-menu ul li:hover{
+    background-color: rgb(59, 59, 59);
+    border-radius: 7px;
+}
+.sub-menu-1{
+    display: none;
+}
+.nav-menu ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #1e847f;
+    border-radius: 7px;
+    margin-top: 16px;
+    margin-left: -25px;
+}
+.nav-menu ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 5px;
+}
+.nav-menu ul li:hover .sub-menu-1 ul li{
+    background: transparent;
+    border-bottom: 2px dotted #ffffff;
+}
+.nav-menu ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.nav-menu ul li:hover .sub-menu-1 ul li a:hover{
+    color: black;
+}
+/* 2nd sub menu */
+.sub-menu-2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background: #1e847f;
+    border-radius: 7px;
+    margin-top: -36px;
+    margin-left: 105px;
+}
+ 
