@@ -1,5 +1,38 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content{
+    margin: 50px;
+    padding: 30px;
+    height: 1000px;
+}
+.nav-bar{
+    text-align: center;
+    background-color:rgb(240, 240, 240);
+    margin-bottom: 50px;
+}
+.nav-bar ul{
+    display: inline-flex;
+    /* border: 2px solid; */
+    padding: 7px;
+}
+.nav-bar li{
+    list-style-type: none;
+    /* border: 2px solid greenyellow; */
+    padding:5px 15px;
+    margin: 7px 10px;
     
+}
+.nav-bar a{
+    text-decoration: none;
+    color: rgb(69, 68, 68);
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.nav-bar a:hover{
+    background-color: rgb(255, 255, 255);
 }
