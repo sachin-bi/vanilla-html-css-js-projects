@@ -9,6 +9,7 @@
     height: 1000px;
 }
 .nav-bar{
+    /* position: static; */
     text-align: center;
     background-color:rgb(240, 240, 240);
     margin-bottom: 50px;
@@ -18,21 +19,43 @@
     /* border: 2px solid; */
     padding: 7px;
 }
-.nav-bar li{
+.nav-bar ul li{
+    /* position: static; */
     list-style-type: none;
     /* border: 2px solid greenyellow; */
     padding:5px 15px;
+    border-radius: 7px;
     margin: 7px 10px;
     
 }
-.nav-bar a{
+.nav-bar ul li a{
     text-decoration: none;
     color: rgb(69, 68, 68);
     padding: 8px 12px;
-    border-radius: 7px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-.nav-bar a:hover{
+.nav-bar ul li:hover{
     background-color: rgb(255, 255, 255);
+}
+.submenu{
+    display: none;
+    /* color: aquamarine; */
+}
+.nav-bar ul li:hover  .submenu {
+    display: block;
+    position: absolute;
+    background-color:rgb(240, 240, 240);
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+.nav-bar ul li:hover .submenu ul{
+    display: block;
+    margin: 1px;
+}
+
+.nav-bar ul li a{
+    position: sticky;
 }
