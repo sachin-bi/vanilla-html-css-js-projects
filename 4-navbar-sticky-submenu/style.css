@@ -3,59 +3,78 @@
     margin: 0;
     box-sizing: border-box;
 }
+.logo-up-nav{
+    text-align: center;
+}
+
+.logo-up-nav img{
+    width: 10%;
+    
+}
 .content{
-    margin: 50px;
+    margin: 50px 30% ;
+    /* text-align: center; */
+    /* width: 25%; */
     padding: 30px;
     height: 1000px;
 }
+
+/* NAV STARTS HERE */
+
 .nav-bar{
-    /* position: static; */
+    position: sticky;
+    top:0;
     text-align: center;
     background-color:rgb(240, 240, 240);
     margin-bottom: 50px;
+    padding: 17px;
 }
-.nav-bar ul{
-    display: inline-flex;
-    /* border: 2px solid; */
-    padding: 7px;
-}
-.nav-bar ul li{
-    /* position: static; */
-    list-style-type: none;
-    /* border: 2px solid greenyellow; */
-    padding:5px 15px;
-    border-radius: 7px;
-    margin: 7px 10px;
-    
+.nav-bar ul li {
+    display: inline;
+    color: black;
+    font-family:cursive, sans-serif;
+    font-size: 19px;
+    margin: 2px 10px;
+    padding: 5px 3px;
+    list-style: none;
 }
 .nav-bar ul li a{
     text-decoration: none;
-    color: rgb(69, 68, 68);
-    padding: 8px 12px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    color: black;
+    margin: 2px 10px;
+    padding: 5px 3px;
 }
 .nav-bar ul li:hover{
-    background-color: rgb(255, 255, 255);
+    background: white;
+    border-radius: 7px;
 }
-.submenu{
+
+/* submenu-1 */
+
+.submenu-1{
     display: none;
-    /* color: aquamarine; */
+    /* border: 2px solid; */
 }
-.nav-bar ul li:hover  .submenu {
+.nav-bar ul li:hover  .submenu-1 { 
     display: block;
     position: absolute;
-    background-color:rgb(240, 240, 240);
     border-radius: 7px;
-    margin-top: 10px;
-    margin-left: -25px;
+    background-color:rgb(198, 209, 215);
+    margin-top: 5px;
+    margin-left: 35%;
+    
 }
-
-.nav-bar ul li:hover .submenu ul{
+.nav-bar ul li :hover .submenu-1 ul {
     display: block;
-    margin: 1px;
+    margin: 5px;
 }
-
-.nav-bar ul li a{
-    position: sticky;
+.submenu-1 ul li {
+    display: block;
+    border-bottom: 2px  dotted rgb(0, 0, 0);
+}
+.submenu-1 ul li:last-child {
+    border-bottom: none;
+}
+#life-ins{
+    margin-left: 48%;
 }

@@ -21,13 +21,14 @@
 }
 
 .navbar ul li {
-    border: 2px  solid burlywood;
+    /* border: 2px  solid burlywood; */
     margin: 0px 9px;
     padding: 11px 0px;
     display: inline;
     text-decoration: none;
     /* width: 100px; */
-    /* position: relative; */
+    /* position: relative;
+    top: 55px; */
 }
 .navbar ul li a, .navbar ul li button{
     text-decoration: none;
@@ -41,17 +42,38 @@
     font-size: 19px;
     /* width: 70px; */
 }
+.navbar ul li:hover {
+    background: #ffffff;
+    border-radius: 7px;
+}
+/* 1 sub menu */
 .submenu{
     display: none;
-    border: 2px solid;
 }
-.navbar ul li:hover .submenu {
+.navbar ul li:hover .submenu{
     display: block;
     position: absolute;
-    /* right: 0%; */
-    /* top: 2px; */
-    /* left: 610px; */
+    background:bisque;
+    border-radius: 7px;
+    margin-top: 16px;
+    margin-left: 50%;
 }
-.submenu ul li{
+
+.navbar ul li:hover .submenu ul{
     display: block;
+    margin: 5px;
+}
+.navbar ul li:hover .submenu ul li a{
+    display: block;
+    background: transparent;
+    border-bottom: 2px dotted #ffffff;
+    margin: 3px;
+    padding: 0px;
+}
+.navbar ul li:hover .submenu ul li:last-child{
+    border-bottom: none;
+}
+#work{
+    background-color: rgb(219, 234, 153);
+    margin-left: 40%;
 }
