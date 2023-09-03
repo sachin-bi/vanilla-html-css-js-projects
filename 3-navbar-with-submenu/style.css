@@ -3,6 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* dashboard */
+
+.dashboard ul {
+    list-style: none;
+    background-color: rgb(245, 237, 134);
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+.dashboard a{
+
+    text-decoration: none;
+}
+.dashboard ul li {
+    margin: 15px 25px;
+    padding: 5px;
+}
+
 body{
     background-image: url(img/bg_img.jpg);
     background-size: cover;
@@ -24,7 +43,7 @@ body{
 .nav-menu ul li {
     
     width:  134px;
-    margin: 2px;
+    margin: 4px;
     padding: 16px 26px;
 }
 
@@ -93,19 +112,3 @@ body{
     background-color: rgb(210, 218, 219);
 }
 
-
-/* dashboard */
-.dashboard ul {
-    list-style: none;
-    background-color: rgb(245, 237, 134);
-    position: fixed;
-    bottom: 15px;
-    right: 20px;
-}
-.dashboard ul li, a{
-    text-decoration: none;
-    margin: 8px;
-    padding: 5px;
-
-
-}
