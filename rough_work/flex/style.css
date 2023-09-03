@@ -1,0 +1,52 @@
+body{
+   background-color: #333;
+}
+
+/* FLEX */
+
+.container{
+    display: flex;
+  
+    /* display: flex;
+    height: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+
+    /* 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    height: 800px;
+    align-content: space-between; 
+    it is for multiline flex uses */
+
+
+    border: 3px solid #333;
+    background-color: cyan;
+}
+
+.item{
+    width: 120px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: aliceblue;
+    padding: 5px;
+    text-align: center;
+}
+
+.item-1{
+    min-height: 100px;
+    flex-shrink: 0;
+}
+
+.item-2{
+    min-height: 200px;
+}
+
+.item-3{
+    min-height: 300px;
+    flex-grow: 1;
+}
