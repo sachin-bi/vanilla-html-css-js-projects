@@ -78,3 +78,20 @@
 #life-ins{
     margin-left: 48%;
 }
+
+
+/* dashboard */
+.dashboard ul {
+    list-style: none;
+    background-color: rgb(245, 237, 134);
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+.dashboard ul li, a{
+    text-decoration: none;
+    margin: 8px;
+    padding: 5px;
+
+
+}
